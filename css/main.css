@@ -99,12 +99,43 @@ width: 50px;
 .footer h3 span {
   color: #aaa;
 }
+.footer-social li {
+  display: inline-block;
+  margin-left: 1em;
+  padding-top: 2em;
+}
+
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  height: 50vh;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  padding-top: 10vh;
 }
-
+.hero-home {
+  background-image: url(/images/shark.jpg);
+  background-position: center top;
+}
+.hero-content {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.hero-content h1 {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  margin-bottom: .25em;
+}
+.hero-content a.social-link {
+  background-color: #fff;
+  color: #557c83;
+  }
+  .hero-content a.social-link:hover {
+    background-color: #000;
+    color: #fff;
+    }
 /* SOCIAL STYLES */
 .social-link {
   background: rgba(150, 150, 150, 0.5); 
@@ -171,4 +202,9 @@ width: 50px;
   color: green;
 }
 
+.test {
+  background-color: #fff;
+  position: relative;
+  z-index: 50;
+}
 
