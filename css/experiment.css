@@ -1,0 +1,22 @@
+/* TEST STYLES */
+.box {
+  align-items: flex-end;
+  background-color: burlywood;
+  display: flex;
+  /* flex-direction: column; */
+  max-width: 800px;
+  position: relative;
+  top: 60px;
+}
+
+.box p {
+  border: 1px solid black;
+  flex: 0 1 auto;
+  text-align: center;
+}
+
+.box-2 {
+  /* flex: 0 1 1000px; */
+}
+
+
