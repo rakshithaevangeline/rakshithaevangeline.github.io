@@ -293,7 +293,7 @@ flex: 1;
   left: 50%;
   position: absolute;
   transform: translate(-50%, 0);
-  
+
 }
 .hero-home {
   background-image: url(/images/shark.jpg);
@@ -643,7 +643,7 @@ flex: 1;
       /* top: 1.5em; */
       width: 100%;
     }
-    
+
   /* HOME STYLES */
   .home-callout {
     flex-direction: column;
@@ -657,7 +657,7 @@ flex: 1;
     font-size: 1.3rem;
     width: auto;
   }
-  
+
   /* GALLERY STYLES */
   .gallery {
     flex-direction: column;
@@ -690,7 +690,7 @@ flex: 1;
   .gallery .gallery-info {
     flex: 1;
   }
-  
+
   /* BLOG STYLES */
   .post-aside {
     display: none;
