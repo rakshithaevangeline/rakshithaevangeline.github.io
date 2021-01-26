@@ -3,15 +3,18 @@
 // appropriately.
 
 function activateGallery() {
-  let thumbnails = document.querySelectorAll("#gallery-thumbs div img");
-  let mainImage = document.querySelector("#gallery-photo img");
-   let imageTitle = document.querySelector("#gallery-info h3.title");
+  let thumbnails       = document.querySelectorAll("#gallery-thumbs div img");
+  let mainImage        = document.querySelector("#gallery-photo img");
+  let imageTitle       = document.querySelector("#gallery-info h3.title");
   let imageDescription = document.querySelector("#gallery-info p.description");
 
-
+  
   thumbnails.forEach(thumbnail => {
+    // Preload large images
+    let largeImages = new Image();
+    largeImages.setAttribute("src", thumbnail.dataset.largeVersion);
+    
     thumbnail.addEventListener("click", function() {
-
       // Set clicked image as the main image
       mainImage.setAttribute("src", thumbnail.dataset.largeVersion);
       mainImage.setAttribute("alt", thumbnail.getAttribute("alt"));
